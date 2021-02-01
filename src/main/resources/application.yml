@@ -1,0 +1,18 @@
+#spring.datasource.username=root
+#spring.datasource.password=123456
+#spring.datasource.url=jdbc:mysql://localhost:3306/user?userSSL=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/school?&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+#配置日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
