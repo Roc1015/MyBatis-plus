@@ -25,10 +25,9 @@ public class WrapperTests {
     //查询name不为空，且邮箱不为空，年龄大于12岁的用户
     public void selectByWrapper(){
         QueryWrapper<User> queryWrapper = new QueryWrapper<>();
-        queryWrapper
-                .isNotNull("name")
-                .isNotNull("email")
-                .ge("age",12);
+        queryWrapper.isNotNull("name")
+                    .isNotNull("email")
+                    .ge("age",12);
 
         userMapper.selectList(queryWrapper).forEach(System.out::println);
     }
